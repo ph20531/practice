@@ -83,6 +83,27 @@ def main():
     st.title('서버 이미지')
     url = 'https://img.seoul.co.kr/img/upload/2023/08/27/SSC_20230827144801_O2.jpg'
     st.image(url)
+    
+    # 로컬 비디오
+    # st.title('로컬 비디오')
+    # video = open('path', 'rb')
+    # st.video(video)
+        
+    # 서버 비디오
+    st.title('서버 비디오')
+    url = 'https://www.youtube.com/watch?v=Ql75dfk0Cbk'
+    st.video(url)
+    
+    # 로컬 오디오
+    st.title('로컬 오디오')
+    url = open(r'C:\Users\406\Documents\GitHub\study\data\no-copyright-for-her-chill-upbeat-summel-travel-vlog-and-ig-music-202298.mp3', 'rb')
+    st.audio(url)
+    
+    # 서버 오디오
+    # st.title('서버 오디오')
+    # audio = open('path')
+    # st.audio(audio)
+    
 
 if __name__ == '__main__':
     main()
