@@ -123,6 +123,10 @@ def main():
     chi = st.chat_input('챗 인풋')
     st.text(f'챗 인풋 | {chi}')
     
+    # 멀티 텍스트
+    tar = st.text_area('텍스트 에어리어')
+    st.text(tar)
+    
 
 if __name__ == '__main__':
     main()
