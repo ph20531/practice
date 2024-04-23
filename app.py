@@ -104,6 +104,25 @@ def main():
     # audio = open('path')
     # st.audio(audio)
     
+    # 인풋
+    ti = st.text_input('텍스트 인풋')
+    st.text(ti)
+    
+    dti = st.date_input('데이터 인풋')
+    st.text(dti)
+    
+    tmi = st.time_input('타임 인풋')
+    st.text(tmi)
+    
+    cmi = st.camera_input('카메라 인풋')
+    st.text(cmi)
+    
+    nmi = st.number_input('넘버 인풋')
+    st.text(nmi)
+    
+    chi = st.chat_input('챗 인풋')
+    st.text(f'챗 인풋 | {chi}')
+    
 
 if __name__ == '__main__':
     main()
