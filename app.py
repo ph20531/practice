@@ -108,8 +108,10 @@ def main():
     ti = st.text_input('텍스트 인풋')
     st.text(ti)
     
-    dti = st.date_input('데이터 인풋')
+    dti = st.date_input('데이트 인풋')
     st.text(dti)
+    st.text(dti.weekday())
+    st.text(dti.strftime('%A'))
     
     tmi = st.time_input('타임 인풋')
     st.text(tmi)
