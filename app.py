@@ -59,6 +59,17 @@ def main():
     st.title('Slider Example')
     value = st.slider("Choose a value", min_value=0, max_value=10, step=1)
     st.write("You selected:", value)
+    
+    # 활용하기
+    st.title('활용하기')
+    options = st.multiselect("컬럼을 선택하세요.", df.columns)
+    if(len(options) == 0):
+        st.text('선택된 컬럼이 없습니다.')
+    else:
+        st.dataframe(df[options])
+        
+    value = st.slider("나이를 입력하세요.", min_value=0, max_value=100, step=1)
+    st.text(f"당신의 나이는 {value}세 입니다.")
 
 if __name__ == '__main__':
     main()
