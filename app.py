@@ -34,25 +34,29 @@ def main():
         st.dataframe(df)
         
     # 라디오 버튼
+    st.title('Radio Button Example')
     option = st.radio("Choose an option", ["Option 1", "Option 2", "Option 3"])
     st.write("You selected:", option)
     
     # 체크박스
-    st.title('Checkbox Example')
+    st.title('Check Box Example')
     if st.checkbox("Check me"):
         st.write("You checked the box!")
     else:
         st.write("You didn't check the box.")
         
     # 선택상자
+    st.title('Select Box Example')
     option = st.selectbox("Choose an option", ["Option 1", "Option 2", "Option 3"])
     st.write("You selected:", option)
     
     # 다중 선택상자
+    st.title('Multi Select Example')
     options = st.multiselect("Choose multiple options", ["Option 1", "Option 2", "Option 3"])
     st.write("You selected:", options)
     
     # 슬라이더
+    st.title('Slider Example')
     value = st.slider("Choose a value", min_value=0, max_value=10, step=1)
     st.write("You selected:", value)
 
