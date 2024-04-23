@@ -115,6 +115,7 @@ def main():
     
     tmi = st.time_input('타임 인풋')
     st.text(tmi)
+    st.text(tmi.strftime('%H:%M'))
     
     cmi = st.camera_input('카메라 인풋')
     st.text(cmi)
@@ -128,6 +129,10 @@ def main():
     # 멀티 텍스트
     tar = st.text_area('텍스트 에어리어')
     st.text(tar)
+    
+    # 컬러 피커
+    cpk = st.color_picker('색상 선택')
+    st.write(cpk)
     
 
 if __name__ == '__main__':
