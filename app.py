@@ -13,6 +13,7 @@
 
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 def main():
     name = '장독대'
@@ -70,6 +71,18 @@ def main():
         
     value = st.slider("나이를 입력하세요.", min_value=0, max_value=100, step=1)
     st.text(f"당신의 나이는 {value}세 입니다.")
+    
+    # 로컬 이미지
+    st.title('로컬 이미지')
+    img = Image.open(r'C:\Users\406\Documents\GitHub\study\data\사과.jpg')
+    st.image(img)
+    st.image(img, width=500)
+    st.image(img, use_column_width=True)
+    
+    # 서버 이미지
+    st.title('서버 이미지')
+    url = 'https://img.seoul.co.kr/img/upload/2023/08/27/SSC_20230827144801_O2.jpg'
+    st.image(url)
 
 if __name__ == '__main__':
     main()
