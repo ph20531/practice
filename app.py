@@ -13,6 +13,9 @@
 
 import streamlit as st
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 from PIL import Image
 
 def main():
@@ -133,6 +136,78 @@ def main():
     # 컬러 피커
     cpk = st.color_picker('색상 선택')
     st.write(cpk)
+    
+    # matplotlib
+    data = pd.DataFrame({
+        'x': np.arange(10),
+        'y': np.random.randn(10)
+    })
+
+    st.line_chart(data)
+    st.bar_chart(data)
+    
+    # seaborn
+    data = pd.DataFrame({
+        'x': np.random.randn(100),
+        'y': np.random.randn(100)
+    })
+    
+    fig, ax = plt.subplots()
+    sns.scatterplot(data=data, x='x', y='y', ax=ax)
+    st.pyplot(fig)
+    
+    # iris data 활용
+    iris = sns.load_dataset('iris')
+
+    fig, ax = plt.subplots()
+    sns.regplot(data=iris, x='sepal_length', y='sepal_width', ax=ax)
+
+    divider = np.linspace(iris['sepal_length'].min(), iris['sepal_length'].max(), num=20)
+    ax_hist = ax.twinx()
+    ax_hist.hist(iris['sepal_length'], bins=20, color='gray', alpha=0.5)
+    ax_hist.set_yticks([])
+
+    st.pyplot(fig)
+    
+    # 파일 업로드
+    uploaded_file = st.file_uploader("파일 업로드", type=['csv', 'xlsx'])
+
+    if uploaded_file is not None:
+        if uploaded_file.name.endswith('.csv'):
+            df = pd.read_csv(uploaded_file)
+        elif uploaded_file.name.endswith('.xlsx'):
+            df = pd.read_excel(uploaded_file, engine='openpyxl')
+            
+        st.write(df)
+        
+    # 마크다운
+    st.markdown('''Happy Streamlit-ing! :balloon:''')
+
+    # 코드블럭    
+    code = '''def hello():
+    print("Hello, Streamlit!")'''
+    st.code(code, language='python')
+    
+    code = '''public void hello():
+    System.out.println("Hello, Streamlit!")'''
+    st.code(code, language='java')
+    
+    # 토스트 메시지
+    import time
+    if st.button('토스트 머신'):
+        toast = st.toast('토스트 굽는 중...', icon='🔥')
+        time.sleep(3.14)
+        toast.toast('토스트 구워짐!', icon='🍞')
+        time.sleep(1.25)
+        toast.toast('축하합니다!', icon='🎉')
+        time.sleep(1.25)
+        st.text('🍞 바삭바삭한 토스트를 얻었습니다!')
+    
+    # plotly
+    import plotly.express as px
+    df = px.data.iris()
+    fig = px.scatter_matrix(df, dimensions=["sepal_width", "sepal_length", "petal_width", "petal_length"], color="species")
+    st.plotly_chart(fig)
     
 
 if __name__ == '__main__':
