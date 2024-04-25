@@ -29,7 +29,7 @@ def index():
     st.write('"이 페이지는 메타에서 개발한 Prophet 라이브러리를 활용하여 만들어진 데이터 분석 및 예측 웹 대시보드입니다. 이 대시보드는 아보카도 시장 데이터셋에 대한 통찰력을 제공하고 데이터 분석을 수행하며, Prophet 라이브러리가 제공하는 고급 예측 기법을 사용하여 예측을 생성합니다. 사용자는 대시보드와 상호작용하여 데이터 트렌드를 탐색하고 예측을 시각화하며 기본 데이터 패턴에 대한 가치 있는 통찰력을 얻을 수 있습니다."')
         
 def DP():
-    st.title('데이터')
+    st.title('데이터 분석')
     st.header('데이터 검색')
     st.write(avocado)
     
@@ -44,7 +44,7 @@ def DP():
     st.write(temp)
     
     st.header('컬럼별 조회')
-    selected_columns = st.multiselect("컬럼을 선택하세요.", avocado.columns)
+    selected_columns = st.multiselect("조회할 컬럼을 선택하세요.", avocado.columns)
     if(len(selected_columns) > 0):
         st.write(avocado[selected_columns])
         
@@ -61,6 +61,19 @@ def DP():
             elif avocado[column].dtype in ['datetime64[ns]']:
                 st.header(f"{column}의 최소/최대 날짜")
                 st.write(pd.DataFrame([{'최소 날짜':avocado[column].min(), '최대 날짜':avocado[column].max()}]))
+    else:
+        st.write('선택된 컬럼이 없습니다.')
+        
+    st.header('컬럼별 상관관계 조회')
+    numerical_columns = avocado.select_dtypes(include=['float64', 'int64']).columns.tolist()
+    selected_columns = st.multiselect("상관관계를 분석할 컬럼을 선택하세요.", numerical_columns)
+
+    if len(selected_columns) > 0:
+        correlation_matrix = avocado[selected_columns].corr()
+
+        fig, ax = plt.subplots()
+        sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", ax=ax)
+        st.pyplot(fig)
     else:
         st.write('선택된 컬럼이 없습니다.')
 
@@ -102,11 +115,11 @@ def main():
     load_data()
     
     st.sidebar.title('아보카도')
-    menu = st.sidebar.selectbox("대시보드", ["홈", "데이터", "머신러닝"])
+    menu = st.sidebar.selectbox("대시보드", ["홈", "데이터 분석", "머신러닝"])
     
     if menu == "홈":
         index()
-    elif menu == "데이터":
+    elif menu == "데이터 분석":
         DP()
     elif menu == "머신러닝":
         ML()
