@@ -30,18 +30,21 @@ def index():
         
 def DP():
     st.title('데이터 분석')
-    st.header('데이터 검색')
-    st.write(avocado)
     
-    st.header('컬럼별 분석')
-    st.write(avocado.describe())
+    st.header('일반 조회')
+    options = ['기본 데이터', '데이터 분석', '데이터 타입']
+    selected_option = st.radio("조회할 유형을 선택하세요.", options)
     
-    st.header('컬럼별 유형')
-    temp = []
-    for column in avocado.columns:
-        temp.append({'컬럼': column, '데이터 타입': avocado[column].dtype})
-    temp = pd.DataFrame(temp)
-    st.write(temp)
+    if selected_option == '기본 데이터':
+        st.write(avocado)
+    elif selected_option == '데이터 분석':
+        st.write(avocado.describe())
+    elif selected_option == '데이터 타입':
+        temp = []
+        for column in avocado.columns:
+            temp.append({'컬럼': column, '데이터 타입': avocado[column].dtype})
+        temp = pd.DataFrame(temp)
+        st.write(temp)
     
     st.header('컬럼별 조회')
     selected_columns = st.multiselect("조회할 컬럼을 선택하세요.", avocado.columns)
