@@ -80,12 +80,12 @@ def DP():
 def ML():
     st.title('머신러닝')
     
-    st.header('x, y 설정')
+    st.header('설정')
     x = st.text_input(label="x", value="avocado['region'] == 'West'")
     number_columns = avocado.select_dtypes(include='number').columns
     y = st.selectbox("y", number_columns, index=number_columns.get_loc("AveragePrice"))
     
-    periods = st.number_input("예측 기간(일)", value=365)
+    periods = st.number_input("예측 기간(일)", value=30)
     freq_options = ['D', 'W', 'M']
     freq = st.selectbox("빈도(D:일, W:주, M:월)", freq_options, index=0)
     
