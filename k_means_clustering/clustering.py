@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from sklearn.compose import ColumnTransformer
 
 def main():
     st.title('K-Means 클러스터링 앱')
@@ -28,6 +30,21 @@ def main():
             st.dataframe(X)
         else:
             st.write('2개 이상의 컬럼을 선택해주세요.')
+        
+        X_new = []
+        for column in X.columns:
+            print(X[column].dtype)
+            if X[column].dtype == object:
+                if X[column].nunique() >= 3:
+                    # onehot encoding
+                    column_names = sorted(X[column].unique())
+                    X_new[column_names] = pd.get_dummies(X[column].to_frame())
+                else:
+                    # label encoding
+                    encoder = LabelEncoder()
+                    X_new[column] = encoder.fit_transform(X[column])
+            else:
+                pass
         
         
         
