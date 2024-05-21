@@ -8,241 +8,360 @@
 	"item": [
 		{
 			"name": "BaseHTTPResource",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:5000/default",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"default"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "BaseHTTPResource",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:5000/default",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"default"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "BaseHTTPResource",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:5000/default",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"default"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "BaseHTTPResource",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:5000/default",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"default"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "RecipesResource",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"김치찌개\",\r\n    \"description\":\"맛있게 끓이는 방법\",\r\n    \"num_of_servings\": 4,\r\n    \"cook_time\": 30,\r\n    \"directions\":\"첫번째 | 물을 500cc 넣는다.\\n두번째 | 고기를 볶는다.\\n세번째 | 두부랑 김치를 넣고 끓인다.\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"item": [
+				{
+					"name": "BaseHTTPResource",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/default",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"default"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://127.0.0.1:5000/recipes",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"recipes"
-					]
+				{
+					"name": "BaseHTTPResource",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/default",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BaseHTTPResource",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/default",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BaseHTTPResource",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/default",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"default"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
 			"name": "RecipesResource",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:5000/recipes?offset=0&limit=25",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"recipes"
-					],
-					"query": [
-						{
-							"key": "offset",
-							"value": "0"
+			"item": [
+				{
+					"name": "RecipesResource",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"김치찌개\",\r\n    \"description\":\"맛있게 끓이는 방법\",\r\n    \"num_of_servings\": 4,\r\n    \"cook_time\": 30,\r\n    \"directions\":\"첫번째 | 물을 500cc 넣는다.\\n두번째 | 고기를 볶는다.\\n세번째 | 두부랑 김치를 넣고 끓인다.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "limit",
-							"value": "25"
+						"url": {
+							"raw": "http://127.0.0.1:5000/recipes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"recipes"
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "RecipesByIdResource",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:5000/recipes/4",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"recipes",
-						"4"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "RecipesByIdResource",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"보쌈\",\r\n    \"description\":\"맛있게 삶는 방법\",\r\n    \"num_of_servings\": 5,\r\n    \"cook_time\": 45,\r\n    \"directions\":\"첫번째 | 물을 500cc 넣는다.\\n두번째 | 채소를 손질한다.\\n세번째 고기를 채소와 함께 삶는다.\",\r\n    \"is_publish\":true\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://127.0.0.1:5000/recipes/101",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"recipes",
-						"101"
-					]
+				{
+					"name": "RecipesResource",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/recipes?offset=0&limit=25",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"recipes"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
 			"name": "RecipesByIdResource",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
+			"item": [
+				{
+					"name": "RecipesByIdResource",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/recipes/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"recipes",
+								"4"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://127.0.0.1:5000/recipes/104",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"recipes",
-						"104"
-					]
+				{
+					"name": "RecipesByIdResource",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"보쌈\",\r\n    \"description\":\"맛있게 삶는 방법\",\r\n    \"num_of_servings\": 5,\r\n    \"cook_time\": 45,\r\n    \"directions\":\"첫번째 | 물을 500cc 넣는다.\\n두번째 | 채소를 손질한다.\\n세번째 고기를 채소와 함께 삶는다.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/recipes/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"recipes",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RecipesByIdResource",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/recipes/51",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"recipes",
+								"51"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		},
+		{
+			"name": "RecipesPublishByIdResource",
+			"item": [
+				{
+					"name": "RecipesPublishByIdResource",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/recipes/101/publish",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"recipes",
+								"101",
+								"publish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RecipesPublishByIdResource",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/recipes/101/publish",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"recipes",
+								"101",
+								"publish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RecipesPublishByIdResource",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/recipes/101/publish",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"recipes",
+								"101",
+								"publish"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

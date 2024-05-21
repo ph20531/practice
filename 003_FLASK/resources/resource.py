@@ -49,7 +49,84 @@ class BaseHTTPResource(Resource):
         return {
             'data':'DELETE | DELETE'
             }
+  
+class RecipesResource(Resource):
+    def post(self):
+        # - body
+        data = request.get_json()
+
+        # - database
+        try:
+            connection = getConnection()
+
+            query = '''INSERT INTO recipe (name, description, num_of_servings, cook_time, directions) VALUES (%s, %s, %s, %s, %s);'''
+            args = (data['name'], data['description'], data['num_of_servings'], data['cook_time'], data['directions'])
+
+            cursor = connection.cursor()
+
+            cursor.execute(query, args)
+            connection.commit()
+
+            cursor.close()
+            connection.close()
+        except Error as e:
+            if cursor is not None:
+                cursor.close()
+
+            if connection is not None:
+                connection.close()
+
+            # ERROR | 500
+            return {
+                'result':'fail',
+                'error':str(e)
+                }
+        
+        # SUCCESS | 200
+        return {
+            'result':
+            'success'
+            }
     
+    def get(self):
+        # - params
+        data = request.args
+        offset = data['offset']
+        limit = data['limit']
+
+        try:
+            connection = getConnection()
+
+            query = f'''SELECT * FROM recipe LIMIT {offset}, {limit};'''
+
+            cursor = connection.cursor(dictionary=True)
+
+            cursor.execute(query)
+            result = cursor.fetchall()
+            result = toISOFormat(result, 'created_at', 'updated_at')
+
+            cursor.close()
+            connection.close()
+        except Error as e:
+            if cursor is not None:
+                cursor.close()
+
+            if connection is not None:
+                connection.close()
+
+            # ERROR | 500
+            return {
+                'result':'fail',
+                'error':str(e)
+                }
+        
+        # SUCCESS | 200
+        return {
+            'result':'success',
+            'items':result,
+            'count':len(result)
+            }
+
 class RecipesByIdResource(Resource):
     def get(self, recipe_id):
         try:
@@ -164,22 +241,17 @@ class RecipesByIdResource(Resource):
         return {
             'result':'success'
             }
-    
-class RecipesResource(Resource):
-    def post(self):
-        # - body
-        data = request.get_json()
 
-        # - database
+class RecipesPublishByIdResource(Resource):
+    def post(self, recipe_id):
         try:
             connection = getConnection()
 
-            query = '''INSERT INTO recipe (name, description, num_of_servings, cook_time, directions) VALUES (%s, %s, %s, %s, %s);'''
-            args = (data['name'], data['description'], data['num_of_servings'], data['cook_time'], data['directions'])
+            query = f'''UPDATE recipe SET is_publish = True WHERE id = {recipe_id};'''
 
             cursor = connection.cursor()
 
-            cursor.execute(query, args)
+            cursor.execute(query)
             connection.commit()
 
             cursor.close()
@@ -199,26 +271,19 @@ class RecipesResource(Resource):
         
         # SUCCESS | 200
         return {
-            'result':
-            'success'
+            'result':'success'
             }
     
-    def get(self):
-        # - params
-        data = request.args
-        offset = data['offset']
-        limit = data['limit']
-
+    def put(self, recipe_id):
         try:
             connection = getConnection()
 
-            query = f'''SELECT * FROM recipe LIMIT {offset}, {limit};'''
+            query = f'''UPDATE recipe SET is_publish = NOT is_publish WHERE id = {recipe_id};'''
 
-            cursor = connection.cursor(dictionary=True)
+            cursor = connection.cursor()
 
             cursor.execute(query)
-            result = cursor.fetchall()
-            result = toISOFormat(result, 'created_at', 'updated_at')
+            connection.commit()
 
             cursor.close()
             connection.close()
@@ -237,7 +302,36 @@ class RecipesResource(Resource):
         
         # SUCCESS | 200
         return {
-            'result':'success',
-            'items':result,
-            'count':len(result)
+            'result':'success'
+            }
+
+    def delete(self, recipe_id):
+        try:
+            connection = getConnection()
+
+            query = f'''UPDATE recipe SET is_publish = False WHERE id = {recipe_id};'''
+
+            cursor = connection.cursor()
+
+            cursor.execute(query)
+            connection.commit()
+
+            cursor.close()
+            connection.close()
+        except Error as e:
+            if cursor is not None:
+                cursor.close()
+
+            if connection is not None:
+                connection.close()
+
+            # ERROR | 500
+            return {
+                'result':'fail',
+                'error':str(e)
+                }
+        
+        # SUCCESS | 200
+        return {
+            'result':'success'
             }
