@@ -5,7 +5,7 @@ from flask_restful import Api
 # flask run 명령어로 실행이 안될 경우
 # set FLASK_APP=003_FLASK\app.py 명령어로 패스 설정
 
-from resources.default import DefaultResource, RecipesResource
+from resources.res import DefaultResource, RecipesResource
 
 # mysql-connector-python 라이브러리 설치
 
