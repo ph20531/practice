@@ -13,7 +13,7 @@ def settings():
 
 def load_data():
     global avocado
-    avocado = pd.read_csv(r'data\avocado.csv')
+    avocado = pd.read_csv(r'001_EDA_AI\data\avocado.csv')
     avocado['Date'] = pd.to_datetime(avocado['Date'])
     del avocado['Unnamed: 0']
     avocado.sort_values('Date', ascending=True, inplace=True)
@@ -22,7 +22,7 @@ def load_data():
 def index():
     st.title('홈')
     
-    img = Image.open(r'avocado\avocado.png')
+    img = Image.open(r'001_EDA_AI\avocado\avocado.png')
     st.image(img, use_column_width=True)
     
     st.header('대시보드')
