@@ -137,10 +137,14 @@ insert into recipe (id, user_id, name, description, num_of_servings, cook_time, 
 insert into recipe (id, user_id, name, description, num_of_servings, cook_time, directions, is_publish, created_at, updated_at) values (49, 34, 'Durrad', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 749, 356, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', true, '2023-02-15 15:49:54', '2005-03-30 07:56:18');
 insert into recipe (id, user_id, name, description, num_of_servings, cook_time, directions, is_publish, created_at, updated_at) values (50, 32, 'Cherrison', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 635, 418, 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', true, '2007-10-06 18:00:24', '2014-10-23 21:00:08');
 
-select * from user;
-select * from recipe;
+-- 타임존 설정 | 타임스탬프의 시간이 이상하게 찍힐 경우
+SET time_zone = 'Asia/Seoul';
 
--- 테스트 쿼리
+-- 테이블 조회
+SELECT * FROM user;
+SELECT * FROM recipe;
+
+-- 실험용 쿼리
 INSERT INTO recipe (name, description, num_of_servings, cook_time, directions)
 VALUES ('Recipe Name', 'Recipe Description', 4, 45, 'Recipe Directions');
 
@@ -149,3 +153,9 @@ SELECT * FROM recipe LIMIT 0, 25;
 UPDATE recipe
 SET is_publish = NOT is_publish
 WHERE id = 101;
+
+DELETE FROM user WHERE username = 'Gill-dong Hong';
+
+SELECT * FROM user WHERE email = 'joseon@korea.kr';
+
+SELECT user_id FROM recipe WHERE id = 57;
