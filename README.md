@@ -3,14 +3,14 @@
     <tr>
         <th>No.</th>
         <th>Category</th>
-        <th>Service</th>
+        <th>Service & Descriptions</th>
         <th>Library</th>
         <th>Position</th>
     </tr>
     <tr>
         <td>001.</td>
         <td>EDA, AI</td>
-        <td></td>
+        <td>AWS 서비스가 사용되지는 않았지만 Jupyter notebook과 colab을 사용하여 개발하였습니다.</td>
         <td>NumPy, Pandas, SciPy, Matplotlib, Seaborn, Keras, TensorFlow, Prophet ...</td>
         <td>Data Analysis, Machine Learning, Deep Learning</td>
     </tr>
@@ -31,7 +31,7 @@
     <tr>
         <td>004.</td>
         <td>API</td>
-        <td>AWS IAM<br/>AWS Lambda<br/>AWS S3<br/>AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.</td>
+        <td>AWS IAM<br/>AWS Lambda<br/>AWS S3<br/><br/>AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.</td>
         <td>Flask, Flask-JWT-Extended, Flask-Restful, Passlib, Email-validator ...</td>
         <td>Back-end</td>
     </tr>
