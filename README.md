@@ -31,6 +31,7 @@
     <tr>
         <td>004.</td>
         <td>API</td>
+        <td>AWS IAM<br/>AWS Lambda<br/>AWS S3</td>
         <td>AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.</td>
         <td>Flask, Flask-JWT-Extended, Flask-Restful, Passlib, Email-validator ...</td>
         <td>Back-end</td>
