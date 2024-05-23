@@ -67,7 +67,7 @@
 ### 클라이언트 어플리케이션(Front-End)
 0010. streamlit
 
-##### 이미지 처리(PIL)
+#### - 이미지 처리(PIL)
 011. pillow
 
 ### 데이터베이스(Database)
@@ -78,11 +78,11 @@
 014. flask_jwt_extended
 015. flask_restfull
 
-##### 비밀번호 암호화(Encryption & Decryption)
+#### - 비밀번호 암호화(Encryption & Decryption)
 016. psycopg2-binary
 017. passlib
 
-##### 이메일 형식 확인(Email Validator)
+#### - 이메일 형식 확인(Email Validator)
 018. email-validator
 
 # 사용된 AWS 서비스들
