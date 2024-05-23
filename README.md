@@ -49,31 +49,31 @@
 007. putty
 
 # 사용된 라이브러리
-#### 데이터 분석(EDA)
+### 데이터 분석(EDA)
 001. numpy
 002. scipy
 003. pandas
 
-#### 시각화(Visualization)
+### 시각화(Visualization)
 004. matplotlib
 005. seaborn
 
-#### 인공지능(AI)
+### 인공지능(AI)
 006. sklearn
 007. keras
 008. tensorflow
 009. prophet
 
-#### 클라이언트 어플리케이션(Front-End)
+### 클라이언트 어플리케이션(Front-End)
 0010. streamlit
 
 ##### 이미지 처리(PIL)
 011. pillow
 
-#### 데이터베이스(Database)
+### 데이터베이스(Database)
 012. mysql-connector-python
 
-#### 서버 어플리케이션(Back-End)
+### 서버 어플리케이션(Back-End)
 013. flask
 014. flask_jwt_extended
 015. flask_restfull
