@@ -163,7 +163,7 @@ serverless deploy
 ```bash
 serverless remove
 ```
-
+▶ 배포가 완료되었다는 로그
 ```bash
 ✔ Service deployed to stack aws-flask-server-dev (105s)
 ```
