@@ -56,7 +56,7 @@
 # Flask어플리케이션을 AWS에 배포하는 방법
 
 ## 001. NodeJS 
-▶ 먼저 홈페이지에서 NodeJS 설치하기
+▶ 먼저 홈페이지에서 NodeJS 설치하기<br/>
 https://nodejs.org/en
 
 ## 002. AWS IAM 
@@ -101,10 +101,11 @@ serverless config credentials --provider aws --key AKIA6GBMCQLLOXBH474Y --secret
 
 ## 004. Deploy
 ▶ 이후 웹 브라우저에서 대시보드가 열린다.<br/>
-▶ 구글로 로그인 | https://app.serverless.com/popcorn0508/apps
+▶ 구글로 로그인<br/>
+https://app.serverless.com/popcorn0508/apps
 
-▶ 그리고 C:\Users\406\Documents\GitHub에 프로젝트가 생성된다.
-▶ 그러면 생성된 프로젝트를 vscode에서 open folder한 후에 cmd에서 serverless deploy 또는 sls deploy 명령어를 입력해준다.
+▶ 그리고 C:\Users\406\Documents\GitHub에 프로젝트가 생성된다.<br/>
+▶ 이후 생성된 프로젝트를 vscode에서 open folder한 후에 cmd에서 serverless deploy 또는 sls deploy 명령어를 입력해준다.
 
 ▶ 참고로 여기에서 sls는 serverless의 약자이다.
 
@@ -187,7 +188,9 @@ api: aws-flask-server-dev-api (1.5 MB)
 # 자동으로 프로젝트 관리되도록 설정하기
 ## Github Actions를 이용한 CI & CD
 ### 001. 로컬:push > github:commit > github:actions > aws ec2:pull
-참고자료 | https://rudtjr0906.tistory.com/50
+▶ 참고자료<br/>
+https://rudtjr0906.tistory.com/50
 
 ### 002. 로컬:push > github:commit > github:actions > aws lambda:pull
-참고자료 | https://sohyun-lee.tistory.com/entry/%E3%85%8F?category=1063559
+▶ 참고자료<br/>
+https://sohyun-lee.tistory.com/entry/%E3%85%8F?category=1063559
