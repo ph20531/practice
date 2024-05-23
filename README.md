@@ -39,21 +39,64 @@
     </tr>
 </table>
 
-# 지금까지 사용된 툴들
+# 사용된 개발 툴들
 001. vscode
-002. mysql workbench
-003. postman
-004. github desktop
-005. putty
+002. jutyper notebook
+003. colab
+004. mysql workbench
+005. postman
+006. github desktop
+007. putty
 
-# 지금까지 사용된 AWS 서비스들
+# 사용된 라이브러리
+## 데이터 분석(EDA)
+001. numpy
+002. scipy
+003. pandas
+
+## 시각화(Visualization)
+004. matplotlib
+005. seaborn
+
+## 인공지능(AI)
+006. sklearn
+007. keras
+008. tensorflow
+009. prophet
+
+## 클라이언트 어플리케이션(Front-End)
+0010. streamlit
+
+### 이미지 처리(PIL)
+011. pillow
+
+## 데이터베이스(Database)
+012. mysql-connector-python
+
+## 서버 어플리케이션(Back-End)
+013. flask
+014. flask_jwt_extended
+015. flask_restfull
+
+### 비밀번호 암호화(Encryption & Decryption)
+016. psycopg2-binary
+017. passlib
+
+### 이메일 형식 확인(Email Validator)
+018. email-validator
+
+# 사용된 AWS 서비스들
 001. RDS
 002. EC2
 003. IAM
 004. Lambda
 005. S3
 
-# Flask어플리케이션을 AWS에 배포하는 방법
+# Streamlit 어플리케이션을 AWS에 배포하는 방법
+▶ 참고자료<br/>
+https://rudtjr0906.tistory.com/category/AWS
+
+# Flask 어플리케이션을 AWS에 배포하는 방법
 
 ## 001. NodeJS 
 ▶ 먼저 홈페이지에서 NodeJS 설치하기<br/>
