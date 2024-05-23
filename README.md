@@ -1,8 +1,59 @@
 # 지금까지 배운 것들 정리
-001. EDA, AI
-002. Database | AWS RDS					      | Mysql
-003. Storage  | AWS EC2                                           | Streamlit      | Front-end
-004. API     | AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포 | Flask        | Back-end
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Technologies</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Project Technologies</h2>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Category</th>
+            <th>Tools</th>
+        </tr>
+        <tr>
+            <td>001.</td>
+            <td>EDA, AI</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>002.</td>
+            <td>Database</td>
+            <td>AWS RDS, Mysql</td>
+        </tr>
+        <tr>
+            <td>003.</td>
+            <td>Storage</td>
+            <td>AWS EC2, Streamlit, Front-end</td>
+        </tr>
+        <tr>
+            <td>004.</td>
+            <td>API</td>
+            <td>
+                AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포, Flask, Back-end
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
 
 # 지금까지 사용된 툴들
 001. vscode
@@ -20,7 +71,7 @@
 # Flask어플리케이션을 AWS에 배포하는 방법
 
 ## 001. NodeJS 
-▶ <a href=https://nodejs.org/en>먼저 홈페이지에서 NodeJS 설치하기</a>
+▶ 먼저 홈페이지에서 <a href=https://nodejs.org/en>NodeJS 설치하기</a>
 
 ## 002. AWS IAM 
 ▶ IAM 서비스에서 사용자 생성을 해야한다.
