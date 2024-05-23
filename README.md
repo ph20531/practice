@@ -12,7 +12,7 @@
         <td>EDA, AI</td>
         <td></td>
         <td>NumPy, Pandas, SciPy, Matplotlib, Seaborn, Keras, TensorFlow, Prophet ...</td>
-        <td>Data Analysis, Machine Learning</td>
+        <td>Data Analysis, Machine Learning, Deep Learning</td>
     </tr>
     <tr>
         <td>002.</td>
@@ -26,7 +26,7 @@
         <td>Storage</td>
         <td>AWS EC2</td>
         <td>Streamlit, pillow ...</td>
-        <td>Front-end</td>
+        <td>Front-end, Storage</td>
     </tr>
     <tr>
         <td>004.</td>
