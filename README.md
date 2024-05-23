@@ -184,5 +184,9 @@ api: aws-flask-server-dev-api (1.5 MB)
 ▶ 마찬가지로 AWS S3 서비스에 버킷이 자동으로 생성된다.
 
 # 자동으로 프로젝트 관리되도록 설정하기
-## 001. 로컬:push > github:commit > ec2:pull
-## 002. 로컬:push > github:commit > lambda:pull
+## Github Actions를 이용한 CI & CD
+### 001. 로컬:push > github:commit > github:actions > aws ec2:pull
+<a href=https://rudtjr0906.tistory.com/50>참고자료</a>
+
+### 002. 로컬:push > github:commit > github:actions > aws lambda:pull
+<a href='https://sohyun-lee.tistory.com/entry/%E3%85%8F?category=1063559'>참고자료</a>
