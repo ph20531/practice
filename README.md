@@ -1,59 +1,43 @@
 # 지금까지 배운 것들 정리
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Technologies</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
-    <h2>Project Technologies</h2>
-    <table>
-        <tr>
-            <th>No.</th>
-            <th>Category</th>
-            <th>Tools</th>
-        </tr>
-        <tr>
-            <td>001.</td>
-            <td>EDA, AI</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>002.</td>
-            <td>Database</td>
-            <td>AWS RDS, Mysql</td>
-        </tr>
-        <tr>
-            <td>003.</td>
-            <td>Storage</td>
-            <td>AWS EC2, Streamlit, Front-end</td>
-        </tr>
-        <tr>
-            <td>004.</td>
-            <td>API</td>
-            <td>
-                AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포, Flask, Back-end
-            </td>
-        </tr>
-    </table>
-</body>
-</html>
-
+<table>
+    <tr>
+        <th>No.</th>
+        <th>Category</th>
+        <th>Service</th>
+        <th>Library</th>
+        <th>Position</th>
+    </tr>
+    <tr>
+        <td>001.</td>
+        <td>EDA, AI</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>002.</td>
+        <td>Database</td>
+        <td>AWS RDS</td>
+        <td>Mysql</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>003.</td>
+        <td>Storage</td>
+        <td>AWS EC2</td>
+        <td>Streamlit</td>
+        <td>Front-end</td>
+    </tr>
+    <tr>
+        <td>004.</td>
+        <td>API</td>
+        <td>
+            AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포
+        </td>
+        <td>Flask</td>
+        <td>Back-end</td>
+    </tr>
+</table>
 
 # 지금까지 사용된 툴들
 001. vscode
