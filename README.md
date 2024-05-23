@@ -11,30 +11,28 @@
         <td>001.</td>
         <td>EDA, AI</td>
         <td></td>
-        <td>Pandas, Matplotlib, Keras, Tensorflow ...</td>
-        <td></td>
+        <td>NumPy, Pandas, SciPy, Matplotlib, Seaborn, Keras, TensorFlow, Prophet ...</td>
+        <td>Data Analysis, Machine Learning</td>
     </tr>
     <tr>
         <td>002.</td>
         <td>Database</td>
         <td>AWS RDS</td>
-        <td>Mysql</td>
-        <td></td>
+        <td>MySQL, mysql-connector-python, psycopg2-binary ...</td>
+        <td>Database Management</td>
     </tr>
     <tr>
         <td>003.</td>
         <td>Storage</td>
         <td>AWS EC2</td>
-        <td>Streamlit</td>
+        <td>Streamlit, pillow ...</td>
         <td>Front-end</td>
     </tr>
     <tr>
         <td>004.</td>
         <td>API</td>
-        <td>
-            AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.
-        </td>
-        <td>Flask</td>
+        <td>AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.</td>
+        <td>Flask, Flask-JWT-Extended, Flask-Restful, Passlib, Email-validator ...</td>
         <td>Back-end</td>
     </tr>
 </table>
