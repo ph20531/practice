@@ -11,7 +11,7 @@
         <td>001.</td>
         <td>EDA, AI</td>
         <td></td>
-        <td></td>
+        <td>Keras, Tensorflow 등등</td>
         <td></td>
     </tr>
     <tr>
