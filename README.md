@@ -1,4 +1,4 @@
-# 지금까지 배운 것들 정리
+# 그동안 배운 내용들 정리
 <table>
     <tr>
         <th>No.</th>
@@ -39,7 +39,7 @@
     </tr>
 </table>
 
-# 사용된 개발 툴들
+# 사용한 개발 툴
 001. vscode
 002. jutyper notebook
 003. colab
@@ -48,7 +48,7 @@
 006. github desktop
 007. putty
 
-# 사용된 라이브러리
+# 사용한 라이브러리
 ### 001. 데이터 분석(EDA)
 001. numpy
 002. scipy
@@ -85,7 +85,7 @@
 #### - 이메일 형식 확인(Email Validator)
 018. email-validator
 
-# 사용된 AWS 서비스들
+# 사용한 AWS 서비스
 001. RDS
 002. EC2
 003. IAM
