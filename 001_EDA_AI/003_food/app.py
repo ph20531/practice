@@ -7,18 +7,20 @@ def main():
     st.title('11개의 음식 분류')
     st.subheader('이미지 업로드 시 음식 예측')
     image = st.file_uploader('이미지를 업로드 해주세요.', type=['jpg', 'jpeg', 'png', 'webp'])
+
+    if image is None:
+        return
     
-    if image is not None:
-        st.image(image)
+    st.image(image)
 
     # Disable scientific notation for clarity
     np.set_printoptions(suppress=True)
 
     # Load the model
-    model = load_model("food\keras_model.h5", compile=False)
+    model = load_model(r"001_EDA_AI\003_food\keras_model.h5", compile=False)
 
     # Load the labels
-    class_names = open("food\labels.txt", "r", encoding="utf-8").readlines()
+    class_names = open(r"001_EDA_AI\003_food\labels.txt", "r", encoding="utf-8").readlines()
 
     # Create the array of the right shape to feed into the keras model
     # The 'length' or number of images you can put into the array is

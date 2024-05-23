@@ -22,7 +22,7 @@ def load_data():
 def index():
     st.title('홈')
     
-    img = Image.open(r'001_EDA_AI\avocado\avocado.png')
+    img = Image.open(r'001_EDA_AI\002_avocado\avocado.png')
     st.image(img, use_column_width=True)
     
     st.header('대시보드')
