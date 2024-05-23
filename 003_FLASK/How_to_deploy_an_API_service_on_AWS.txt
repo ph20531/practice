@@ -1,31 +1,12 @@
-# 지금까지 배운 것들 정리
-001. EDA, AI
-002. Database | AWS RDS					      | Mysql
-003. Storage  | AWS EC2                                           | Streamlit      | Front-end
-004. API     | AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포 | Flask        | Back-end
+001. NodeJS ____________________________________________________________________________________________________________________________
 
-# 지금까지 사용된 툴들
-001. vscode
-002. mysql workbench
-003. postman
-004. github desktop
-005. putty
+▶ 먼저 홈페이지에서 NodeJS 설치하기
 
-# 지금까지 사용된 AWS 서비스들
-001. RDS
-002. EC2
-003. IAM
-004. Lambda
+002. AWS IAM __________________________________________________________________________________________________________________________
 
-# Flask어플리케이션을 AWS에 배포하는 방법
-
-## 001. NodeJS 
-▶ <a href=https://nodejs.org/en>먼저 홈페이지에서 NodeJS 설치하기</a>
-
-## 002. AWS IAM 
 ▶ IAM 서비스에서 사용자 생성을 해야한다.
 
-### - 권한 설정
+- 권한 설정
 1. Amazon API Gateway
 2. Amazon RDS Data
 3. CloudFront
@@ -37,7 +18,8 @@
 
 ▶ 사용자 생성을 완료했다면 api_dev_accessKeys.csv파일을 다운로드 받는다.
 
-## 003. Serverless | CMD 
+003. Serverless | CMD __________________________________________________________________________________________________________________
+
 ▶ Windows CMD를 켜고 serverless를 설치한 후 설정해준다.
 
 cd C:\Users\406\Documents\GitHub
@@ -60,7 +42,8 @@ serverless config credentials --provider aws --key AKIA6GBMCQLLOXBH474Y --secret
 √ Enter AWS Access Key ID: · AKIA6GBMCQLLOXBH474Y
 √ Enter AWS Secret Access Key: · 9Ge17YfsBEZDXrDM9GnPXiEIyzt3uuaQr5VYxrMa
 
-## 004. Deploy
+004. Deploy ____________________________________________________________________________________________________________________________
+
 ▶ 이후 웹 브라우저에서 대시보드가 열린다.
 ▶ 구글로 로그인 | https://app.serverless.com/popcorn0508/apps
 
@@ -119,9 +102,30 @@ endpoints:
 functions:
   api: aws-flask-server-dev-api (1.5 MB)
 
-## 005. AWS Lambda
+AWS Lambda _________________________________________________________________________________________________________________________
+
 ▶ 배포된 프로젝트는 AWS Lambda 서비스에서 확인할 수 있다.
 
-# 자동으로 프로젝트 관리되도록 설정하기
+_________________________________________________________________________________________________________________________________________
+지금까지 배운 것들 정리
+001. EDA, AI
+002. Database | AWS RDS					      | Mysql
+003. Storage  | AWS EC2                                           | Streamlit      | Front-end
+004. API     | AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포 | Flask        | Back-end
+_________________________________________________________________________________________________________________________________________
+사용된 툴들
+001. vscode
+002. mysql workbench
+003. postman
+004. github desktop
+005. putty
+_________________________________________________________________________________________________________________________________________
+사용된 AWS 서비스들
+001. RDS
+002. EC2
+003. IAM
+004. Lambda
+_________________________________________________________________________________________________________________________________________
+자동으로 프로젝트 관리되도록 설정하기
 로컬:push > github:commit > ec2:pull
 로컬:push > github:commit > lambda:pull
