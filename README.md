@@ -56,7 +56,8 @@
 # Flask어플리케이션을 AWS에 배포하는 방법
 
 ## 001. NodeJS 
-▶ 먼저 홈페이지에서 <a href=https://nodejs.org/en>NodeJS 설치하기</a>
+▶ 먼저 홈페이지에서 NodeJS 설치하기
+https://nodejs.org/en
 
 ## 002. AWS IAM 
 ▶ IAM 서비스에서 사용자 생성을 해야한다.
@@ -186,7 +187,7 @@ api: aws-flask-server-dev-api (1.5 MB)
 # 자동으로 프로젝트 관리되도록 설정하기
 ## Github Actions를 이용한 CI & CD
 ### 001. 로컬:push > github:commit > github:actions > aws ec2:pull
-<a href=https://rudtjr0906.tistory.com/50>참고자료</a>
+참고자료 | https://rudtjr0906.tistory.com/50
 
 ### 002. 로컬:push > github:commit > github:actions > aws lambda:pull
-<a href='https://sohyun-lee.tistory.com/entry/%E3%85%8F?category=1063559'>참고자료</a>
+참고자료 | https://sohyun-lee.tistory.com/entry/%E3%85%8F?category=1063559
