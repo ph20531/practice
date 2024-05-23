@@ -83,7 +83,9 @@ npm install -g serverless
 serverless
 
 serverless config credentials --provider aws --key AKIA6GBMCQLLOXBH474Y --secret 9Ge17YfsBServerless ϟ Framework
+```
 
+```bash
 √ Select A Template: · AWS / Python / Flask API
 
 √ Name Your Service: · aws-flask-server
