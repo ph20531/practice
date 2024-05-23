@@ -39,7 +39,7 @@
     </tr>
 </table>
 
-# 사용한 개발 툴
+# 사용한 개발 도구들
 001. vscode
 002. jutyper notebook
 003. colab
@@ -48,7 +48,7 @@
 006. github desktop
 007. putty
 
-# 사용한 라이브러리
+# 사용한 라이브러리들
 ### 001. 데이터 분석(EDA)
 001. numpy
 002. scipy
@@ -85,7 +85,7 @@
 #### - 이메일 형식 확인(Email Validator)
 018. email-validator
 
-# 사용한 AWS 서비스
+# 사용한 AWS 서비스들
 001. RDS
 002. EC2
 003. IAM
