@@ -180,5 +180,5 @@ api: aws-flask-server-dev-api (1.5 MB)
 ▶ 배포된 프로젝트는 AWS Lambda 서비스에서 확인할 수 있다.
 
 # 자동으로 프로젝트 관리되도록 설정하기
-로컬:push > github:commit > ec2:pull
-로컬:push > github:commit > lambda:pull
+## 001. 로컬:push > github:commit > ec2:pull
+## 002. 로컬:push > github:commit > lambda:pull
