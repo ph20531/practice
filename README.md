@@ -32,7 +32,7 @@
         <td>004.</td>
         <td>API</td>
         <td>
-            AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포
+            AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.
         </td>
         <td>Flask</td>
         <td>Back-end</td>
@@ -51,6 +51,7 @@
 002. EC2
 003. IAM
 004. Lambda
+005. S3
 
 # Flask어플리케이션을 AWS에 배포하는 방법
 
@@ -98,7 +99,7 @@ serverless config credentials --provider aws --key AKIA6GBMCQLLOXBH474Y --secret
 ```
 
 ## 004. Deploy
-▶ 이후 웹 브라우저에서 대시보드가 열린다.
+▶ 이후 웹 브라우저에서 대시보드가 열린다.<br/>
 ▶ 구글로 로그인 | https://app.serverless.com/popcorn0508/apps
 
 ▶ 그리고 C:\Users\406\Documents\GitHub에 프로젝트가 생성된다.
@@ -131,11 +132,11 @@ package:
     - config/**  # config 폴더와 그 하위 모든 파일 및 디렉토리 포함
 ```
 
-▶ 이제 기존에 개발했던 로컬 API 프로젝트 파일들을 serverless프로젝트로 옮겨주고
-▶ AWS lambda서비스 환경에 맞게 환경설정을 해주어야 한다.
+▶ 이제 기존에 개발했던 로컬 API 프로젝트 파일들을 serverless프로젝트로 옮겨주고<br/>
+▶ AWS lambda 서비스 환경에 맞게 환경설정을 해주어야 한다.
 
-▶ serverless.yml에서 provider: 부분 수정
-▶ AWS 런타임 환경을 python3.10버전으로, 리전은 아시아 태평양(서울)인 ap-northeast-2로 설정한다는 뜻이다.
+▶ serverless.yml에서 provider: 부분 수정<br/>
+( 참고로 AWS 런타임 환경을 python3.10버전으로, 리전은 아시아 태평양(서울)인 ap-northeast-2로 설정한다는 뜻이다. )
 ```bash
 provider:
   name: aws
@@ -143,8 +144,8 @@ provider:
   region: ap-northeast-2
 ```
 
-▶ requirements.txt에서 아래의 코드를 맨 밑에 추가
-▶ 배포 시 사용할 라이브러리를 설치한다는 뜻이다.
+▶ requirements.txt에서 아래의 코드를 맨 밑에 추가<br/>
+( 참고로 배포 시 사용할 라이브러리를 설치한다는 뜻이다. )
 ```bash
 flask-restful
 mysql-connector-python
@@ -178,6 +179,9 @@ api: aws-flask-server-dev-api (1.5 MB)
 
 ## 005. AWS Lambda
 ▶ 배포된 프로젝트는 AWS Lambda 서비스에서 확인할 수 있다.
+
+## 006. AWS S3
+▶ 마찬가지로 AWS S3 서비스에 버킷이 자동으로 생성된다.
 
 # 자동으로 프로젝트 관리되도록 설정하기
 ## 001. 로컬:push > github:commit > ec2:pull
