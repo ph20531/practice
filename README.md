@@ -12,7 +12,7 @@
         <td>001.</td>
         <td>EDA, AI</td>
         <td>없음</td>
-        <td><sub><sup>AWS 서비스가 사용되지는 않았지만 Jupyter notebook과 colab을 사용하여 개발하였다.</sup></sub></td>
+        <td><sub>AWS 서비스가 사용되지는 않았지만 Jupyter notebook과 colab을 사용하여 개발하였다.</sub></td>
         <td>NumPy, Pandas, SciPy, Matplotlib, Seaborn, Keras, TensorFlow, Prophet ...</td>
         <td>Data Analysis, Machine Learning, Deep Learning</td>
     </tr>
