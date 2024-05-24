@@ -3,13 +3,15 @@
     <tr>
         <th>No.</th>
         <th>Category</th>
-        <th>Service & Descriptions</th>
+        <th>Service</th>
+        <th>Descriptions</th>
         <th>Library</th>
         <th>Position</th>
     </tr>
     <tr>
         <td>001.</td>
         <td>EDA, AI</td>
+        <td></td>
         <td>AWS 서비스가 사용되지는 않았지만 Jupyter notebook과 colab을 사용하여 개발하였다.</td>
         <td>NumPy, Pandas, SciPy, Matplotlib, Seaborn, Keras, TensorFlow, Prophet ...</td>
         <td>Data Analysis, Machine Learning, Deep Learning</td>
@@ -18,6 +20,7 @@
         <td>002.</td>
         <td>Database</td>
         <td>Database | AWS RDS<br/>Storage | 자체 Storage</td>
+        <td></td>
         <td>MySQL, mysql-connector-python, psycopg2-binary ...</td>
         <td>Database Management</td>
     </tr>
@@ -25,13 +28,15 @@
         <td>003.</td>
         <td>Client</td>
         <td>Cloud Computing | AWS EC2<br/>Storage | AWS EBS</td>
+        <td></td>
         <td>Streamlit, pillow ...</td>
         <td>Front-end</td>
     </tr>
     <tr>
         <td>004.</td>
         <td>Server / API</td>
-        <td>AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.<br/>Security, Identity, & Compliance | AWS IAM<br/>Cloud Computing | AWS Lambda<br/>Storage | AWS S3</td>
+        <td>Security, Identity, & Compliance | AWS IAM<br/>Cloud Computing | AWS Lambda<br/>Storage | AWS S3</td>
+        <td>AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.</td>
         <td>Flask, Flask-JWT-Extended, Flask-Restful, Passlib, Email-validator ...</td>
         <td>Back-end</td>
     </tr>
