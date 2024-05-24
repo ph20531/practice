@@ -19,7 +19,7 @@
     <tr>
         <td>002.</td>
         <td>Database</td>
-        <td><b>Database</b><br/>AWS RDS<hr/><b>Storage</b><br/>자체 Storage</td>
+        <td><b>Database</b><br/>AWS RDS<br/><br/><b>Storage</b><br/>자체 Storage</td>
         <td>관계형 데이터베이스 서비스<br/>Relational Database Service</td>
         <td>MySQL, mysql-connector-python, psycopg2-binary ...</td>
         <td>Database Management</td>
@@ -35,7 +35,7 @@
     <tr>
         <td>004.</td>
         <td>Server / API</td>
-        <td>Security, Identity, & Compliance | AWS IAM<br/>Cloud Computing | AWS Lambda<br/>Storage | AWS S3</td>
+        <td><b>Security, Identity, & Compliance</b><br/>AWS IAM<br/><br/><b>Cloud Computing</b><br/>AWS Lambda<br/><br/><b>Storage</b><br/>AWS S3</td>
         <td>AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.</td>
         <td>Flask, Flask-JWT-Extended, Flask-Restful, Passlib, Email-validator ...</td>
         <td>Back-end</td>
