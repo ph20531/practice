@@ -1,5 +1,5 @@
 # 그동안 배운 내용들 정리
-<table style="font-size: 8px;">
+<table style="font-size: 4px;">
     <tr>
         <th>No.</th>
         <th>Category</th>
