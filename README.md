@@ -19,10 +19,7 @@
     <tr>
         <td>002.</td>
         <td>Database</td>
-        <tr>
-        <td>Database<br/>Storage</td>
-        <td>AWS RDS<br/>자체 Storage</td>
-        </tr>
+        <td>Database | AWS RDS<br/>Storage | 자체 Storage</td>
         <td>관계형 데이터베이스 서비스<br/>Relational Database Service</td>
         <td>MySQL, mysql-connector-python, psycopg2-binary ...</td>
         <td>Database Management</td>
