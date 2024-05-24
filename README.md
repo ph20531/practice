@@ -19,7 +19,7 @@
     <tr>
         <td>002.</td>
         <td>Database</td>
-        <td><b>Database</b><br/>AWS RDS<br/><b>Storage</b><br/>자체 Storage</td>
+        <td><b>Database</b><br/>AWS RDS<br/><br/><b>Storage</b><br/>자체 Storage</td>
         <td>관계형 데이터베이스 서비스<br/>Relational Database Service</td>
         <td>MySQL, mysql-connector-python, psycopg2-binary ...</td>
         <td>Database Management</td>
@@ -27,7 +27,7 @@
     <tr>
         <td>003.</td>
         <td>Client</td>
-        <td>Cloud Computing | AWS EC2<br/>Storage | AWS EBS</td>
+        <td><b>Cloud Computing</b><br/>AWS EC2<br/><br/><b>Storage</b><br/>AWS EBS</td>
         <td>AWS EC2 생성 시 AWS EBS 스토리지 용량 설정</td>
         <td>Streamlit, pillow ...</td>
         <td>Front-end</td>
