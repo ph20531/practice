@@ -1,5 +1,6 @@
 # 그동안 배운 내용들 총 정리
-<table style="overflow-x: auto;">
+```bash
+<table>
     <tr>
         <th>No.</th>
         <th>Category</th>
@@ -41,7 +42,7 @@
         <td>Back-end</td>
     </tr>
 </table>
-
+```
 # 사용한 개발 도구들
 001. vscode
 002. jutyper notebook
