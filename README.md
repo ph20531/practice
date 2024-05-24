@@ -1,44 +1,44 @@
 # 그동안 배운 내용들 총 정리
-<table style='font-size:8px;'>
+<table>
     <tr>
-        <th>No.</th>
-        <th>Category</th>
-        <th>Service</th>
-        <th>Descriptions</th>
-        <th>Library</th>
-        <th>Position</th>
+        <th><sub>No.</sub></th>
+        <th><sub>Category</sub></th>
+        <th><sub>Service</sub></th>
+        <th><sub>Descriptions</sub></th>
+        <th><sub>Library</sub></th>
+        <th><sub>Position</sub></th>
     </tr>
     <tr>
-        <td>001.</td>
-        <td>EDA, AI</td>
-        <td>없음</td>
+        <td><sub>001.</sub></td>
+        <td><sub>EDA, AI</sub></td>
+        <td><sub>없음</sub></td>
         <td><sub>AWS 서비스가 사용되지는 않았지만 Jupyter notebook과 colab을 사용하여 개발하였다.</sub></td>
-        <td>NumPy, Pandas, SciPy, Matplotlib, Seaborn, Keras, TensorFlow, Prophet ...</td>
-        <td>Data Analysis, Machine Learning, Deep Learning</td>
+        <td><sub>NumPy, Pandas, SciPy, Matplotlib, Seaborn, Keras, TensorFlow, Prophet ...</sub></td>
+        <td><sub>Data Analysis, Machine Learning, Deep Learning</sub></td>
     </tr>
     <tr>
-        <td>002.</td>
-        <td>Database</td>
-        <td>Database | AWS RDS<br/>Storage | 자체 Storage</td>
-        <td>관계형 데이터베이스 서비스<br/>Relational Database Service</td>
-        <td>MySQL, mysql-connector-python, psycopg2-binary ...</td>
-        <td>Database Management</td>
+        <td><sub>002.</sub></td>
+        <td><sub>Database</sub></td>
+        <td><sub>Database | AWS RDS<br/>Storage | 자체 Storage</sub></td>
+        <td><sub>관계형 데이터베이스 서비스<br/>Relational Database Service</sub></td>
+        <td><sub>MySQL, mysql-connector-python, psycopg2-binary ...</sub></td>
+        <td><sub>Database Management</sub></td>
     </tr>
     <tr>
-        <td>003.</td>
-        <td>Client</td>
-        <td>Cloud Computing | AWS EC2<br/>Storage | AWS EBS</td>
-        <td>AWS EC2 생성 시 AWS EBS 스토리지 용량 설정</td>
-        <td>Streamlit, pillow ...</td>
-        <td>Front-end</td>
+        <td><sub>003.</sub></td>
+        <td><sub>Client</sub></td>
+        <td><sub>Cloud Computing | AWS EC2<br/>Storage | AWS EBS</sub></td>
+        <td><sub>AWS EC2 생성 시 AWS EBS 스토리지 용량 설정</sub></td>
+        <td><sub>Streamlit, pillow ...</sub></td>
+        <td><sub>Front-end</sub></td>
     </tr>
     <tr>
-        <td>004.</td>
-        <td>Server / API</td>
-        <td>Security, Identity, & Compliance | AWS IAM<br/>Cloud Computing | AWS Lambda<br/>Storage | AWS S3</td>
-        <td>AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.</td>
-        <td>Flask, Flask-JWT-Extended, Flask-Restful, Passlib, Email-validator ...</td>
-        <td>Back-end</td>
+        <td><sub>004.</sub></td>
+        <td><sub>Server / API</sub></td>
+        <td><sub>Security, Identity, & Compliance | AWS IAM<br/>Cloud Computing | AWS Lambda<br/>Storage | AWS S3</sub></td>
+        <td><sub>AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.</sub></td>
+        <td><sub>Flask, Flask-JWT-Extended, Flask-Restful, Passlib, Email-validator ...</sub></td>
+        <td><sub>Back-end</sub></td>
     </tr>
 </table>
 
