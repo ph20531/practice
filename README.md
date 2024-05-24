@@ -1,7 +1,6 @@
-# 그동안 배운 내용들 정리
-<table style="font-size: 4px;">
+# 그동안 배운 내용들 요약
+<table>
     <tr>
-        <th>No.</th>
         <th>Category</th>
         <th>Service</th>
         <th>Descriptions</th>
@@ -9,7 +8,6 @@
         <th>Position</th>
     </tr>
     <tr>
-        <td>001.</td>
         <td>EDA, AI</td>
         <td>없음</td>
         <td>AWS 서비스가 사용되지는 않았지만 Jupyter notebook과 colab을 사용하여 개발하였다.</td>
@@ -17,7 +15,6 @@
         <td>Data Analysis, Machine Learning, Deep Learning</td>
     </tr>
     <tr>
-        <td>002.</td>
         <td>Database</td>
         <td>Database | AWS RDS<br/>Storage | 자체 Storage</td>
         <td>관계형 데이터베이스 서비스<br/>Relational Database Service</td>
@@ -25,7 +22,6 @@
         <td>Database Management</td>
     </tr>
     <tr>
-        <td>003.</td>
         <td>Client</td>
         <td>Cloud Computing | AWS EC2<br/>Storage | AWS EBS</td>
         <td>AWS EC2 생성 시 AWS EBS 스토리지 용량 설정</td>
@@ -33,7 +29,6 @@
         <td>Front-end</td>
     </tr>
     <tr>
-        <td>004.</td>
         <td>Server / API</td>
         <td>Security, Identity, & Compliance | AWS IAM<br/>Cloud Computing | AWS Lambda<br/>Storage | AWS S3</td>
         <td>AWS IAM 사용자 생성 후 serverless로 AWS Lambda에 배포하면 AWS S3에 버킷이 자동으로 생성된다.</td>
